@@ -51,8 +51,6 @@ func (p Process) Spawn(path, URI string) *exec.Cmd {
 	os.MkdirAll(path, os.ModePerm)
 	processCommands := []string{
 		"-y",
-		"-fflags",
-		"nobuffer",
 		"-rtsp_transport",
 		"tcp",
 		"-i",
